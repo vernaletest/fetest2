@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "fetest2"
+  annotations:
+    backstage.io/kubernetes-id: "fetest2"
+    backstage.io/techdocs-ref: dir:.
+    grafana/overview-dashboard: https://grafana.local.lan.vernal.dev/d/X6mdr1hnz/loki?orgId=1
+  links:
+  
+  - title: backend
+    url: https://backend-fetest2-group-default-guests-app.local.lan.vernal.dev
+  
+  - title: frontend
+    url: https://frontend-fetest2-group-default-guests-app.local.lan.vernal.dev
+  
+spec:
+  type: service
+  owner: "group:default/guests"
+  lifecycle: experimental
+
